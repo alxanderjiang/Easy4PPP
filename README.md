@@ -1,5 +1,6 @@
 # Easy4PPP
-[[中]](./README_zh.md) &ensp; [[EN]](./README.md)
+[[中]](./README-zh.md) &ensp; [[EN]](./README.md)
+
 An Easily Applied and Recompiled  Multi-platform Precise Point Position (PPP) Toolbox Coded in Python
 ## Quick Start
 1. we provide a set of example data and a quick-start jupyter notebook tutorial "ppp.ipynb". Make sure that you have sucessufully installed the Python as well as the numpy in your environment.
