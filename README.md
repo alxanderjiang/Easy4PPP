@@ -7,3 +7,7 @@ An Easily Applied and Recompiled  Multi-platform Precise Point Position (PPP) To
 2. Due to the file size limitation of github (no more than 25MB for a file), we compress the "data" folder into zip file. In order to try the provided example of GPS precise point position (PPP), you need first unzip the "data.zip" into the "data" folder in the project path. 
 3. After unzipping the "data" folder, run all the blocks of "ppp.ipynb", you all get an Easy4PPP solution log file in form of ".npy".
 4. We provided an ecample of visualizing the solution log file. Run all the blocks of nav_result.ipynb, you can get figures about the PPP convergence curve, the STEC scatter and the residuls scatter plot.
+## Downloading and preperations
+1. Download the **zip pakeage directly** or using git clone by running the following commend:
+```bash
+git clone https://github.com/alxanderjiang/Easy4PPP.git
