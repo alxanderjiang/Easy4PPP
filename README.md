@@ -26,7 +26,7 @@ pip install ipykernel
 numpy and tqdm is used in the core codes while ipykernel is necessary to run Jupyter Notebook tutorials.
 ## Running
 1. Get the sample results by running the main function of sppp.py or running the ppp.ipynb in the Jupyter Notebook.
-2. After processing, you will get a solution log named as "jfng1320.240.out.npy" in format of numpy array in the folder: nav_result.
+2. After processing, you will get a solution log named as "jfng1320.24o.out.npy" in format of numpy array in the folder: nav_result.
 3. Running the nav_result.ipynb, you will get six pictures of PPP results and products. The details are listed in UserMannual.pdf.
 ## Contact Authors
 All the libaries and softwares in this toolbox are coded by Zhuojun Jiang, Zeen Yang, Wenjing Huang, Chuang Qian from Wuhan University of Technology. Any commends or bug reports are welcomed by sending email to zhuojun_jiang@whut.edu.cn. 
