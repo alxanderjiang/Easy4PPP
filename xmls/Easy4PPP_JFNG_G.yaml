@@ -1,0 +1,93 @@
+## Easy4PPP配置文件
+## Easy4PPP: 纯Python编译的PPP工具箱
+## Configure File of Easy4PPP: An Easily Applied and Recompiled Multi-platform 
+## Precise Point Positioning Toolbox Coded in Python
+
+## 作者: 蒋卓君, 杨泽恩, 黄文静, 钱闯, 武汉理工大学
+## Copyright 2025-, by Zhuojun Jiang, Zeen Yang, Wenjing Huang, Chuang Qian, Wuhan University of Technology, China
+
+## "##" 下为必选配置, "#"下为可选配置
+## Configurations below "##" are necessary while "#" are optional
+
+## 观测文件
+## observation file path
+obs_file: "data/OBS/JFNG/jfng1320.24o"
+
+## 多系统标识符 (G: GPS C: BDS E: GAL)
+## System Choices (G for GPS, C for BDS, E for GAL)
+sys_indexs: ['G']
+
+## 多系统频点选择 (以RINEX v3.04协议为准)
+## Multi-GNSS Code&Frequency Choices (RINEX version 3.04 format)
+
+obs_type: [['C1C', 'L1C', 'D1C', 'S1C', 'C2W', 'L2W', 'D2W', 'S2W'], ['C2I', 'L2I', 'D2I', 'S2I', 'C6I', 'L6I', 'D6I', 'S6I'], ['C1C', 'L1C', 'D1C', 'S1C', 'C5Q', 'L5Q', 'D5Q', 'S5Q']]
+
+freqs: [[1575420000.0, 1227600000.0], [1561098000.0, 1268520000.0], [1575420000.0, 1176450000.0]]
+
+## 精密产品文件路径
+## Precise Products Path
+SP3_file: "data/Peph_clk/20241320/wum23136.sp3"
+CLK_file: "data/Peph_clk/20241320/wum23136.clk"
+ATX_file: "data/ATX/igs20.atx"
+
+## 导航结果输出文件路径
+## Navigation Results Path
+out_path: "nav_result"
+
+## 自定义电离层模型参数 (当前仅支持八参数Klobuchar模型)
+## Ion Model Parameters Set (Klobuchar only in current version)
+ion_param: []
+
+# 广播星历文件路径
+# Broadcast Navigation File Path
+BRDC_file: "data/brdc/BRDC00IGS_R_20241320000_01D_MN.rnx"
+
+# DCB修正选项 (0: 不改正DCB 1:改正DCB)
+# DCB Correction (0: off 1:on)
+dcb_correction: 0
+
+# DCB产品来源 (CODE; CAS)
+# DCB Products (CODE or CAS)
+dcb_products: 'CAS'
+
+# DCB产品文件路径(CAS产品同时包括频内和频间偏差)
+# DCB File Path (If 'CAS', dcb_file_1 and dcb_file_2 not available)
+dcb_file_0: "data/DCB/CAS0MGXRAP_20241310000_01D_01D_DCB.BSX"
+dcb_file_1: ""
+dcb_file_2: ""
+
+# 解算时间段
+# The solution time period
+obs_start: 0                               #解算初始时刻索引(the beginning epoch of solution)
+obs_epoch: 0                               #解算总历元数量  (the ending epoch of solution, 0 for total number)
+
+# 最大容忍失锁阈值时间 (单位: s, 用于电离层、模糊度状态重置)
+# The outlier ages of ionospheric delay and ambiguity, expressed in second.
+out_age: 31
+
+# PPP动态模式配置, 支持static, dynamic
+# Dynamic mode, 'static' or 'dynamic'
+dy_mode: 'static'
+
+# 卫星截止高度角
+# The threshold of satellite elevation
+el_threthod: 15.0
+
+# 先验残差阈值 (单位: m)
+# The threshold of pre-fit residuals, expressed in meters
+ex_threshold_v: 100
+
+# 后验残差阈值
+# The threshold of post-fit residuals, expressed as the multiples of noise residuals (sigma)
+ex_threshold_v_sigma: 4
+# Mw组合周跳检验阈值 (单位: 周)
+# The threshold of phase jump detation for Mw combinations, expressed in cycle
+Mw_threshold: 2.5
+
+# GF组合周跳检验阈值 (单位: m)
+# The threshold of phase jump detation for Mw combinations, expressed in meters
+GF_threshold: 0.15
+
+# 排除卫星PRN码 (不包括因精密星历和钟差基准而排除的卫星)
+# The PRNs of outiler satellites
+sat_out: []
