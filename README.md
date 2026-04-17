@@ -36,4 +36,4 @@ pip install Pyyaml
 2. The results and visualization are the same as "Running from the python source code to get GPS-only solutions"
 3. The tutorial Jupyter notebook rinex2yaml.ipynb can automatically generate the common configs according to the input observation files (RINEX .o files).
 ## Contact Authors
-All the libaries and softwares in this toolbox are coded by Zhuojun Jiang, Zeen Yang, Wenjing Huang, Chuang Qian from Wuhan University of Technology. Any commends or bug reports are welcomed by sending email to zhuojun_jiang@whut.edu.cn. 
+All the libaries and softwares in this toolbox are coded by Zhuojun Jiang, Zeen Yang, Wenjing Huang, Chuang Qian from Wuhan University of Technology. Any commends or bug reports are welcomed by sending email to its0122112380219@163.com. 
