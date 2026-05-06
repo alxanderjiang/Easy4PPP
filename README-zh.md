@@ -1,7 +1,7 @@
 # Easy4PPP: 纯Python编译的精密单点定位工具包
 [[中]](./README-zh.md) &ensp; [[EN]](./README.md)
 
-Easy4PPP是Easy4PNT工具箱的组成模块，工具箱的其他组成模块在这里给出 (单击可跳转对应工具箱目录)：[[Easy4SPP]](https://github.com/alxanderjiang/Easy4SPP), [[Easy4RTK]](https://github.com/alxanderjiang/Easy4RTK), [[Easy4RTK]](https://github.com/alxanderjiang/Easy4RTK), [[Easy4B2b]](https://github.com/alxanderjiang/Easy4B2b).
+Easy4PPP是Easy4PNT工具箱的组成模块，工具箱的其他组成模块在这里给出 (单击可跳转对应工具箱目录)：[[Easy4SPP]](https://github.com/alxanderjiang/Easy4SPP), [[Easy4RTK]](https://github.com/alxanderjiang/Easy4RTK), [[Easy4PTK]](https://github.com/alxanderjiang/Easy4PTK), [[Easy4B2b]](https://github.com/alxanderjiang/Easy4B2b).
 
 ## 快速开始
 1. 工具包提供一个示例jupyter notebook教程用于快速演示工具包进行精密单点定位（Precise Point Position, PPP）解算的结果。在使用工具包之前, 确保你已经在环境中正确安装Python发行版本和numpy库。
